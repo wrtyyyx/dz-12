@@ -1,0 +1,208 @@
+@import url(reset.css);
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+.hidenn {
+    opacity: 0;
+    z-index: -1;
+}
+
+.wrapper {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/bg.jpg) no-repeat center/ cover;
+    height: 100vh;
+    font-family: Roboto;
+}
+
+.container {
+    width: 496px;
+    background: rgba(233, 233, 233, 0.25);
+    backdrop-filter: blur(5px);
+    margin-left: auto;
+    height: 100%;
+}
+
+.form-box {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.card-switch {
+    display: flex;
+}
+.card-switch label::before {
+    content: " ";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 168px;
+    height: 32px;
+    border-radius: 30px;
+    background: #153416;
+    transition: 0.3s ease-in-out;
+}
+#switch {
+    display: none;
+}
+
+.card-switch label {
+    display: flex;
+    width: 340px;
+    height: 36px;
+    border-radius: 30px;
+    border: 1px solid #153416;
+    cursor: pointer;
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-switch span {
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    user-select: none;
+}
+
+.card-switch input:checked + label::before {
+    transform: translateX(100%);
+}
+.title {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    margin-top: 75px;
+}
+
+.form {
+    margin-top: 29px;
+}
+.form input {
+    width: 340px;
+    height: 44px;
+    border-radius: 30px;
+    font-family: inherit;
+    background: #929191;
+    margin-top: 15px;
+}
+
+.pass {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    user-select: none;
+}
+
+.forg-pass input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.forg-pass label {
+    cursor: pointer;
+    padding-left: 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.forg-pass label::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+}
+.forg-pass input:checked + label::before {
+    background: #153416;
+    border: #153416;
+}
+
+.forg-pass input:checked + label::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 5px;
+    width: 6px;
+    height: 15px;
+    border-bottom: 2px solid aliceblue;
+    border-right: 2px solid aliceblue;
+    transform: rotate(38deg);
+}
+.pass a {
+    color: #153416;
+    font-size: 12px;
+    text-decoration-line: underline;
+}
+
+.enter a {
+    padding: 15px 153px;
+    border-radius: 30px;
+    background: #153416;
+    margin-top: 45px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+.enter {
+    margin-top: 45px;
+}
+
+.reg {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.no-acc {
+    color: #153416;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 12px;
+}
+.reg-ac {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.another {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.another p {
+    color: #153416;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.icon {
+    width: 102px;
+    height: 24px;
+    margin: 0 auto;
+}
