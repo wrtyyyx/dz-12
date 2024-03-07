@@ -1,4 +1,5 @@
 @import url(reset.css);
+
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.woff2") format("woff2");
@@ -34,6 +35,7 @@
 .card-switch {
     display: flex;
 }
+
 .card-switch label::before {
     content: " ";
     position: absolute;
@@ -45,6 +47,7 @@
     background: #153416;
     transition: 0.3s ease-in-out;
 }
+
 #switch {
     display: none;
 }
@@ -67,7 +70,6 @@
     z-index: 1;
     color: #fff;
     text-align: center;
-
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -75,11 +77,11 @@
     user-select: none;
 }
 
-.card-switch input:checked + label::before {
+.card-switch input:checked+label::before {
     transform: translateX(100%);
 }
+
 .title {
-    text-align: center;
     color: #fff;
     text-align: center;
     font-family: Roboto;
@@ -90,6 +92,7 @@
 .form {
     margin-top: 29px;
 }
+
 .form input {
     width: 340px;
     height: 44px;
@@ -114,6 +117,7 @@
     z-index: -1;
     opacity: 0;
 }
+
 .forg-pass label {
     cursor: pointer;
     padding-left: 25px;
@@ -131,12 +135,13 @@
     border-radius: 2px;
     border: 1px solid #d9d9d9;
 }
-.forg-pass input:checked + label::before {
+
+.forg-pass input:checked+label::before {
     background: #153416;
     border: #153416;
 }
 
-.forg-pass input:checked + label::after {
+.forg-pass input:checked+label::after {
     content: "";
     position: absolute;
     top: -4px;
@@ -147,6 +152,7 @@
     border-right: 2px solid aliceblue;
     transform: rotate(38deg);
 }
+
 .pass a {
     color: #153416;
     font-size: 12px;
@@ -163,6 +169,7 @@
     font-size: 12px;
     font-weight: 400;
 }
+
 .enter {
     margin-top: 45px;
 }
@@ -180,6 +187,7 @@
     text-decoration: none;
     font-size: 12px;
 }
+
 .reg-ac {
     color: #fff;
     font-weight: 400;
@@ -201,6 +209,7 @@
     font-size: 12px;
     font-weight: 400;
 }
+
 .icon {
     width: 102px;
     height: 24px;
